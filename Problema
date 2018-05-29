@@ -1,0 +1,34 @@
+<?php
+
+$nomes = array("Lucas"=>"19", "Michel"=>"23", "Albert Einstein"=>"74", "Rodrigo"=>"42", "Santa claus"=>"321");
+
+foreach($nomes as $nome =>$idade){
+	if($idade%2==1){
+		echo "nome= ".$nome .  " Idade " . $idade;
+		echo "</br>";
+
+	}	
+
+}
+ 
+ echo "soma das idades = ".array_sum($nomes);
+
+ echo "<br><br>";
+
+foreach($nomes as $nome =>$idade){
+	if($idade >= 40){
+		echo "nome= ".$nome .  " Idade " . $idade;
+		echo "</br>";
+
+	}	
+
+}
+ 
+ echo "</br>";
+
+ksort($nomes);
+foreach ($nomes as $nome => $idade) {
+	
+	echo "$nome ";
+	echo "</br>";
+}
